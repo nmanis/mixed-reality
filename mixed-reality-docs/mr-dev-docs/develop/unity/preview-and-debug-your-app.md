@@ -26,7 +26,7 @@ Holographic Remoting requires a fast PC and Wi-Fi connection. You can find more 
 
 ![Screenshot of the Holographic Remoting Player running in the HoloLens](images/openxr-features-img-01.png)
 
-# [Unity 2020 + OpenXR](#tab/openxr)
+# [Unity 2021/2022 + OpenXR](#tab/openxr)
 
 The following steps assume that you have already set up your project to use OpenXR (in other words, you've imported the required packages and chosen settings for the OpenXR plug-in). If you haven't yet done this, see our articles describing how to set up a new OpenXR project [with MRTK](./new-openxr-project-with-mrtk.md) or [without MRTK](./new-openxr-project-without-mrtk.md).
 
@@ -53,7 +53,7 @@ The following steps assume that you have already set up your project to use Open
     > [!TIP]
     > To debug C# scripts in play mode, [attach Visual Studio to Unity](/visualstudio/gamedev/unity/get-started/using-visual-studio-tools-for-unity?pivots=windows).
 
-# [Unity 2019/2020 + Windows XR Plugin](#tab/winxr)
+# [Unity 2021/2022 + Windows XR Plugin](#tab/winxr)
 
 1. On your HoloLens 2, go to the **Microsoft Store** and install the [Player](https://www.microsoft.com/store/p/holographic-remoting-player/9nblggh4sv40)** app.
 1. On your HoloLens 2, start the Player. Note that on the Start menu, the tile for the Player says **Holographic Remoting**.
