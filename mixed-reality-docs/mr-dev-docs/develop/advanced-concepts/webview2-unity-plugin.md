@@ -12,13 +12,13 @@ keywords: HoloLens, WebView2, Unity
 > [!IMPORTANT]
 > WebView2 continues to be available. However, support for WebView2 is discontinued (no bug fixes, content updates or technical support), and we can therefore make no guarantees that applications will continue to work for any extended period of time.
 
-The **Microsoft Mixed Reality WebView plugin for Unity** enables the integration of WebView2 functionality into your HoloLens 2 app.  This WebView plugin for Unity simplifies the integration of WebView2 functionality into your HoloLens 2 app by wrapping the WebView2 control, automatically handling rendering, and automatically directing input to the WebView2 control.
+The **Microsoft Mixed Reality WebView plugin for Unity** enables the integration of WebView2 functionality into your HoloLens 2 app. This WebView plugin for Unity simplifies the integration of WebView2 functionality into your HoloLens 2 app by wrapping the WebView2 control, automatically handling rendering, and automatically directing input to the WebView2 control.
 
 This plugin also manages interop between Unity and WebView2, enabling communication between JavaScript and Unity via messages and events.
 
 This plugin exposes a subset of the functionality that's available via [CoreWebView2](/dotnet/api/microsoft.web.webview2.core.corewebview2).
 
-WebView2 on HoloLens 2 and the WebView plugin for Unity are both in Preview and are subject to change before general availability.  The WebView2 Preview is available in the Insider Preview for Microsoft HoloLens.  To access this preview, you must be enrolled in the Windows Insider Program; see [Start receiving Insider builds](/hololens/hololens-insider#start-receiving-insider-builds) in _Insider preview for Microsoft HoloLens_.
+WebView2 on HoloLens 2 and the WebView plugin for Unity are both in Preview and are subject to change before general availability. The WebView2 Preview is available in the Insider Preview for Microsoft HoloLens. To access this preview, you must be enrolled in the Windows Insider Program; see [Start receiving Insider builds](/hololens/hololens-insider#start-receiving-insider-builds) in _Insider preview for Microsoft HoloLens_.
 
 WebView2 and the WebView plugin are only supported on HoloLens 2 devices running the Windows 11 update. For more information, see [Update HoloLens 2](/hololens/hololens-update-hololens).
 
@@ -123,13 +123,13 @@ The 2D Unity `Texture2D` object that the WebView content is rendered to. **Reado
 <!-- ------------------------------ -->
 #### IWebView.Width Property
 
-The width of the WebView texture and the WebView control. Note that the rendered dimensions of the `IWebView` instance in the Unity scene are controlled by the `GameObject`.
+The width of the WebView texture and the WebView control. The rendered dimensions of the `IWebView` instance in the Unity scene are controlled by the `GameObject`.
 
 
 <!-- ------------------------------ -->
 #### IWebView.Height Property
 
-The height of the WebView texture and the WebView control. Note that the rendered dimensions of the `IWebView` instance in the Unity scene are controlled by the `GameObject`.
+The height of the WebView texture and the WebView control. The rendered dimensions of the `IWebView` instance in the Unity scene are controlled by the `GameObject`.
 
 
 <!-- ------------------------------ -->
@@ -166,7 +166,7 @@ webView.OnceCreated.ContinueWith((task) => {
 
 Changes the size of the WebView2 control and the `Texture`. For details, see the underlying [CoreWebView2Controller.Bounds Property](/dotnet/api/microsoft.web.webview2.core.corewebview2controller.bounds).
 
-Note that the rendered dimensions of the `IWebView` instance in the Unity scene are controlled by the `GameObject`.
+The rendered dimensions of the `IWebView` instance in the Unity scene are controlled by the `GameObject`.
 
 ##### Example
 
@@ -338,7 +338,7 @@ public delegate void WebView_OnCloseRequested();
 
 #### IWithBrowserHistory.CanGoForwardUpdated Event
 
-Triggered when a navigation occurs. The event delegate will provide a `true` value if [CoreWebView2.CanGoForward Property](/dotnet/api/microsoft.web.webview2.core.corewebview2.cangoforward) is `true`.
+Triggered when navigation occurs. The event delegate will provide a `true` value if [CoreWebView2.CanGoForward Property](/dotnet/api/microsoft.web.webview2.core.corewebview2.cangoforward) is `true`.
 
 ##### Example
 
@@ -353,7 +353,7 @@ void OnCanGoBack(bool value)
 
 #### IWithBrowserHistory.CanGoBackUpdated Event
 
-Triggered when a navigation occurs. The event delegate will provide a `true` value if [CoreWebView2.CanGoBack Property](/dotnet/api/microsoft.web.webview2.core.corewebview2.cangoback) is `true`.
+Triggered when navigation occurs. The event delegate will provide a `true` value if [CoreWebView2.CanGoBack Property](/dotnet/api/microsoft.web.webview2.core.corewebview2.cangoback) is `true`.
 
 ##### Example
 
